@@ -12,7 +12,12 @@ class PerguntaApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: const Text('Olá Flutter!!'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Perguntas'),
+        ),
+        body: const Text('Olá Flutter!!!'),
+      ),
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
